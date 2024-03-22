@@ -53,16 +53,18 @@ public class CalculatorWindow extends JFrame{
 		
 		int tempX = X;
 		int tempY = Y;
+		
+		// Configure and add the display to the main Frame
 		display.setBounds(tempX, tempY, 240, HEIGHT);
 		display.setBackground(Color.GRAY);
 		display.setForeground(Color.WHITE);
 		add(display);
-		
+
+		// Configure and adds the Memory component
 		memLabel.setBounds(X, Y + HEIGHT + V_SPACE, WIDTH, HEIGHT);
 		add(memLabel);
 		
 		// Create and set Coordinates for all Memory Buttons
-		
 		tempY = Y + 2*(HEIGHT + V_SPACE);
 		
 		for (int i = 0 ; i < memoryButton.length ; i++) {
@@ -74,7 +76,6 @@ public class CalculatorWindow extends JFrame{
 		}
 		
 		// Create and set Coordinates for all Special Buttons
-		
 		tempX = X + 1*(WIDTH + H_SPACE);
 		tempY = Y + 1*(HEIGHT + V_SPACE);
 		
@@ -87,7 +88,6 @@ public class CalculatorWindow extends JFrame{
 		}
 		
 		// Create and set Coordinates for all Number Buttons
-		
 		int numberX = X + WIDTH + H_SPACE;
 		int numberY = Y + 2*(HEIGHT + V_SPACE);
 		
@@ -111,7 +111,6 @@ public class CalculatorWindow extends JFrame{
 		}
 		
 		// Create and set Coordinates for all Operator Buttons
-		
 		int operatorX = numberX + 2*(WIDTH + H_SPACE) + H_SPACE;
 		int operatorY = numberY;
 		
@@ -148,7 +147,8 @@ public class CalculatorWindow extends JFrame{
 		setVisible(true);
 		
 	}
-	
+
+	// Create a function for formatting furture Text on the display
 	static String getFormattedText(double temp) {
 		
 		String text = "" + temp;
