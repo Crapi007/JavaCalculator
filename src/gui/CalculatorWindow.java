@@ -32,7 +32,7 @@ public class CalculatorWindow extends JFrame{
 	char operator;
 	
 	// Setup strings for the button definitions
-	String buttonNumbersText[] = {"7","8","9","4","5","6","1","2","3","0","0","+/-","-"};
+	String buttonNumbersText[] = {"7","8","9","4","5","6","1","2","3","+/-","0",".","-"};
 	String buttonOperatorsText[] = {"/","sqrt","*","%","-","1/X", "+", "="};
 	String buttonMemoryText[] = {"MC","MR","MS", "M+"};
 	String buttonSpecialText[] = {"Backspace","C","CE"};
