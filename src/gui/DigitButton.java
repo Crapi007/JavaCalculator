@@ -61,7 +61,7 @@ public class DigitButton extends Button implements ActionListener {
 		int index = 0;
 		
 		try {
-			// Parse the Integer to get rid of unneeded spaces for example, aswell as giving the value to the variable index
+			// Turn the String into an Integer for calculations
 			index = Integer.parseInt(tempText);
 
 		// Checks for errors in your Format and returns to prevent crashing
